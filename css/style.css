@@ -1,0 +1,51 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  padding-top: 4.5rem;
+  background-color: #4b4b4d;
+  color: white;
+}
+
+#clientAnimation img {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes rotateClients {
+  0% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#clientAnimation img.clientTop {
+  animation-name: rotateClients;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+
+#clientAnimation img.clientBottom {
+  animation-name: rotateClients;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+}
+
+footer {
+  background-color: #313539;
+}

@@ -8,11 +8,39 @@ body {
   color: white;
 }
 
+.loginbtn {
+  color: #f3991f;
+  background-color: white;
+  border-color: white;
+}
+.loginbtn:hover {
+  background-color: #f3991f;
+  border-color: #f3991f;
+}
+
+footer {
+  background-color: #313539;
+}
+
 #clientAnimation img {
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
+}
+#clientAnimation img.clientTop {
+  animation-name: rotateClients;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+#clientAnimation img.clientBottom {
+  animation-name: rotateClients;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes rotateClients {
@@ -30,22 +58,4 @@ body {
   }
 }
 
-#clientAnimation img.clientTop {
-  animation-name: rotateClients;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-direction: alternate;
-}
-
-#clientAnimation img.clientBottom {
-  animation-name: rotateClients;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-direction: alternate-reverse;
-}
-
-footer {
-  background-color: #313539;
-}
+/*# sourceMappingURL=style.css.map */

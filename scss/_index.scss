@@ -1,0 +1,20 @@
+body {
+    padding-top: 4.5rem;
+    background-color: $gris-claro;
+    color: $blanco;
+  }
+
+.loginbtn{
+  color: $naranja;
+  background-color: $blanco;
+  border-color: $blanco;
+
+  &:hover{
+    background-color: $naranja;
+    border-color: $naranja;
+  }
+}
+
+footer {
+    background-color: $gris-oscuro;
+  }
